@@ -6,7 +6,10 @@ public class MergeSort {
 	/**
 	 * First variant with array of ints
 	 */
+	
+	
 	public static void mergeSort(int [] inputArray){
+		//System.out.println("*********************MERGESORT*********************");
 		int size = inputArray.length;
 		if(size < 2) return; //only one element = already sorted
 		int mid = size / 2;
@@ -54,6 +57,8 @@ public class MergeSort {
 			input[k] = left[i];
 			k++;
 			i++;
+
+			
 		}
 		
 		//Uneven numbers, right array was longer
@@ -61,16 +66,9 @@ public class MergeSort {
 			input[k] = right[j];
 			k++;
 			j++;
+
 		}
 	}
-	
-	
-	public static void main(String [] args){
-		int[] sortMe = {6,2,7,5,3,1,2,9,8};
-		System.out.println("Before Sort: " + Arrays.toString(sortMe));
-		mergeSort(sortMe);
-		System.out.println("After Sort: " + Arrays.toString(sortMe));
-
-	}
+   
 
 }
