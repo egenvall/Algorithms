@@ -10,7 +10,7 @@ public class InsertionSort {
 
 			while( j > 0 && array[j] < array[j-1]){
 				swap(array, j, j-1);
-				j = j-1 ;
+				j = j-- ;
 			}
 		}
 	}
