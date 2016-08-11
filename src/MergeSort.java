@@ -1,17 +1,9 @@
 import java.util.Arrays;
 
 public class MergeSort {
-	
-	
-	/**
-	 * First variant with array of ints
-	 */
-	
-	
 	public static void mergeSort(int [] inputArray){
-		//System.out.println("*********************MERGESORT*********************");
 		int size = inputArray.length;
-		if(size < 2) return; //only one element = already sorted
+		if(size < 2) return; 
 		int mid = size / 2;
 		int leftSize = mid;
 		int rightSize = size - mid;
@@ -57,8 +49,6 @@ public class MergeSort {
 			input[k] = left[i];
 			k++;
 			i++;
-
-			
 		}
 		
 		//Uneven numbers, right array was longer
@@ -66,7 +56,6 @@ public class MergeSort {
 			input[k] = right[j];
 			k++;
 			j++;
-
 		}
 	}
    

@@ -4,8 +4,6 @@ public class InsertionSort {
 	
 	
 	public void insertionSort(int [] array){
-		//System.out.println("*********************INSERTIONSORT*********************");
-
 		int j;
 		
 		for(int i = 1; i< array.length; i++){
